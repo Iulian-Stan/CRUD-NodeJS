@@ -1,0 +1,24 @@
+{
+  "name": "db-service",
+  "version": "1.0.0",
+  "description": "GraphQL (Apollo) Microservice",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "apollo",
+    "graphql",
+    "mongodb"
+  ],
+  "author": "Iulian Stan",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.19.0",
+    "graphql": "^15.4.0",
+    "mongoose": "^5.10.15"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
