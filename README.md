@@ -8,7 +8,17 @@ npm install
 ```
 
 ## Usage
-Start the application by running
+1. Create SQLite DataBase file in the root folder
+```bash
+touch database.sqlite
+```
+
+2. Run the migrations
+```bash
+node_modules/.bin/sequelize db:migrate
+```
+
+3. Start the application by running
 ```bash
 npm start
 ```

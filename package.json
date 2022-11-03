@@ -1,10 +1,10 @@
 {
   "name": "db-service",
   "version": "1.0.0",
-  "description": "GraphQL (Apollo) Microservice",
-  "main": "index.js",
+  "description": "Crud Application",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "keywords": [
     "apollo",
@@ -14,11 +14,13 @@
   "author": "Iulian Stan",
   "license": "MIT",
   "dependencies": {
-    "apollo-server": "^2.19.0",
-    "graphql": "^15.4.0",
-    "mongoose": "^5.10.15"
+    "apollo-server": "^3.11.1",
+    "bcryptjs": "^2.4.3",
+    "graphql": "^16.6.0",
+    "sequelize": "^6.25.3",
+    "sqlite3": "^5.1.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "sequelize-cli": "^6.5.2"
   }
 }
