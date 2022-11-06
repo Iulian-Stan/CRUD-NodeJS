@@ -5,7 +5,7 @@ const typeDefs = gql`
     id: Int!
     name: String!
     email: String!
-    books: [Book!]!
+    books: [Book!]
   }
 
   type Book {
@@ -13,7 +13,7 @@ const typeDefs = gql`
     title: String!
     author: String!
     description: String!
-    user: User!
+    user: User
   }
 
   type Query {
@@ -29,12 +29,27 @@ const typeDefs = gql`
       email: String!,
       password: String!
     ): User!
+    updateUser(
+      id: Int!,
+      name: String,
+      email: String,
+      password: String
+    ): User
+    deleteUser(id: Int!): User
     createBook(
-      userId: Int!
-      title: String!
-      author: String!
+      userId: Int!,
+      title: String!,
+      author: String!,
       description: String!
     ): Book!
+    updateBook(
+      id: Int!,
+      userId: Int,
+      title: String,
+      author: String,
+      description: String
+    ): Book
+    deleteBook(id: Int!): Book
   }
 `;
 
