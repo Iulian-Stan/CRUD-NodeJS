@@ -1,7 +1,7 @@
 {
-  "name": "db-service",
+  "name": "graphql-crud",
   "version": "1.0.0",
-  "description": "Crud Application",
+  "description": "GraphLQ Crud Application",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
@@ -9,7 +9,7 @@
   "keywords": [
     "apollo",
     "graphql",
-    "mongodb"
+    "sqlite"
   ],
   "author": "Iulian Stan",
   "license": "MIT",
