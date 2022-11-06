@@ -5,21 +5,22 @@ const typeDefs = gql`
     id: Int!
     name: String!
     email: String!
-    recipes: [Recipe!]!
+    books: [Book!]!
   }
 
-  type Recipe {
+  type Book {
     id: Int!
     title: String!
-    ingredients: String!
-    direction: String!
+    author: String!
+    description: String!
     user: User!
   }
 
   type Query {
     user(id: Int!): User
-    allRecipes: [Recipe!]!
-    recipe(id: Int!): Recipe
+    allUsers: [User]!
+    book(id: Int!): Book
+    allBooks: [Book!]!
   }
 
   type Mutation {
@@ -28,12 +29,12 @@ const typeDefs = gql`
       email: String!,
       password: String!
     ): User!
-    createRecipe(
+    createBook(
       userId: Int!
       title: String!
-      ingredients: String!
-      direction: String!
-    ): Recipe!
+      author: String!
+      description: String!
+    ): Book!
   }
 `;
 
